@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> </title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <!-- MOBILE MENU CSS -->
+  <link href="css/jquery.mobile-menu.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="overlay"></div>
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+  	<div class="mob-top">
+    	<span><a href="#">Mi Cuenta</a></span>
+        <span><a href="javascript:void()"><i class="fa fa-bell"></i></a></span>
+        <span><a href="#"><i class="fa fa-shopping-cart"></i> 1</a></span>
+        <span class="search"><a href="javascript:void()"><i class="fa fa-search"></i></a></span>
+        <div class="search-form mobsearch" style="display:none;">
+            <input name="" type="search" id="txtTopSearch">
+            <button type="submit" class="btnSearch"><i class="fa fa-search"></i></button>
+        </div>   
+    </div>
+    
+    <div class="sidenav">
+    	<div class="mitem mobmenu"><a href="#">PRODUCTOS</a>
+        	<div class="subitem" style="display:none;">
+            	<ul class="mobile-menu">
+                    <li><a href="#">CUIDADO DEL CUTIS</a>
+                        <ul>
+                            <li><a href="#">LIMPIAR</a>
+                                <ul>
+                                    <li><a href="#">Exfoliante</a></li>
+                                    <li><a href="#">Limpiador</a></li>
+                                    <li><a href="#">Loción Facial</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">REGÍMENES</a>
+                                <ul>
+                                    <li><a href="#">Royal Jelly</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">HUMECTAR</a>
+                                <ul>
+                                    <li><a href="#">Día</a></li>
+                                    <li><a href="#">Noche</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">TRATAMIENTO</a>
+                                <ul>
+                                    <li><a href="#">Cuidado para Ojos</a></li>
+                                    <li><a href="#">Mascarillas</a></li>
+                                    <li><a href="#">Sueros y Tratamientos para el Rostro</a></li>
+                                    <li><a href="#">Tratamientos para el Acné</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ACCESORIOS</a>
+                                <ul>
+                                    <li><a href="#">Cepillo Limpiador</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">PROTECCIÓN SOLAR</a>
+                                <ul>
+                                    <li><a href="#">Cuerpo</a></li>
+                                    <li><a href="#">Rostro</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MARCAS</a>
+                                <ul>
+                                    <li><a href="#">Advanced Dynamics</a></li>
+                                    <li><a href="#">Beauty Dynamics</a></li>
+                                    <li><a href="#">Brightening Dynamics</a></li>
+                                    <li><a href="#">Gold Dynamics</a></li>
+                                    <li><a href="#">JAFRA PRO</a></li>
+                                    <li><a href="#">JAFRA Sun</a></li>
+                                    <li><a href="#">JAFRA Teens</a></li>
+                                    <li><a href="#">Matte Dynamics</a></li>
+                                    <li><a href="#">Royal Jelly</a></li>
+                                    <li><a href="#">Time Dynamics</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">FRAGANCIAS</a>
+                        <ul>
+                            <li><a href="#">DAMAS</a>
+                                <ul>
+                                    <li><a href="#">Damas</a></li>
+                                    <li><a href="#">Jóvenes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CABALLEROS</a>
+                                <ul>
+                                    <li><a href="#">Caballeros</a></li>
+                                    <li><a href="#">Jóvenes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">NIÑOS</a></li>
+                            <li><a href="#">MARCAS</a>
+                                <ul>
+                                    <li><a href="#">Adorisse</a></li>
+                                    <li><a href="#">Blazon</a></li>
+                                    <li><a href="#">Bloom</a></li>
+                                    <li><a href="#">Coreta</a></li>
+                                    <li><a href="#">Diamonds</a></li>
+                                    <li><a href="#">Double Nature</a></li>
+                                    <li><a href="#">Draumur</a></li>
+                                    <li><a href="#">Eau d'Aromes</a></li>
+                                    <li><a href="#">Epic</a></li>
+                                    <li><a href="#">Force Magnétique</a></li>
+                                </ul>
+                            </li>
+                        </ul>                            
+                    </li>
+                    <li><a href="#">MAQUILLAJE</a>
+                        <ul>
+                            <li><a href="#">BROCHAS Y ACCESORIOS</a>
+                                <ul>
+                                    <li><a href="#">Accesorios para Uñas</a></li>
+                                    <li><a href="#">Brochas para Maquillaje</a></li>
+                                    <li><a href="#">Sacapuntas</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">OJOS</a>
+                                <ul>
+                                    <li><a href="#">Cejas</a></li>
+                                    <li><a href="#">Delineador</a></li>
+                                    <li><a href="#">Máscara</a></li>
+                                    <li><a href="#">Removedor de Maquillaje</a></li>
+                                    <li><a href="#">Sombras</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">UÑAS</a>
+                                <ul>
+                                    <li><a href="#">Esmalte</a></li>
+                                    <li><a href="#">Removedor de Esmalte</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">LABIOS</a>
+                                <ul>
+                                    <li><a href="#">Brillo</a></li>
+                                    <li><a href="#">Delineador</a></li>
+                                    <li><a href="#">Labial</a></li>
+                                    <li><a href="#">Removedor de Maquillaje</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">ROSTRO</a>
+                                <ul>
+                                    <li><a href="#">Base</a></li>
+                                    <li><a href="#">CC Cream</a></li>
+                                    <li><a href="#">Corrector</a></li>
+                                    <li><a href="#">Iluminador</a></li>
+                                    <li><a href="#">Maquillaje</a></li>
+                                    <li><a href="#">Polvo</a></li>
+                                    <li><a href="#">Rubor</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">COLOR</a>
+                                <ul>
+                                    <li><a href="#">Azules y Verdes</a></li>
+                                    <li><a href="#">Blancos</a></li>
+                                    <li><a href="#">Cafés</a></li>
+                                    <li><a href="#">Ciruelas</a></li>
+                                    <li><a href="#">Corales</a></li>
+                                    <li><a href="#">Negros y Metálicos</a></li>
+                                    <li><a href="#">Neutros</a></li>
+                                    <li><a href="#">Rojos</a></li>
+                                    <li><a href="#">Rosados</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MARCAS</a>
+                                <ul>
+                                    <li><a href="#">Beauty Dynamics</a></li>
+                                    <li><a href="#">JAFRA Beauty</a></li>
+                                    <li><a href="#">Royal Jelly</a></li>
+                                </ul>
+                            </li>
+                        </ul>                            
+                    </li>
+                    <li><a href="#">BAÑO Y CUERPO</a>
+                        <ul>
+                            <li><a href="#">BAÑO</a>
+                                <ul>
+                                    <li><a href="#">Baño y Regadera</a></li>
+                                    <li><a href="#">Tratamientos Spa</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CABELLO</a>
+                                <ul>
+                                    <li><a href="#">Acondicionador</a></li>
+                                    <li><a href="#">Mascarillas y Tratamientos</a></li>
+                                    <li><a href="#">Shampoo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">CUERPO</a>
+                                <ul>
+                                    <li><a href="#">Cuidado de los Labios</a></li>
+                                    <li><a href="#">Desodorantes</a></li>
+                                    <li><a href="#">Humectantes</a></li>
+                                    <li><a href="#">Manos</a></li>
+                                    <li><a href="#">Pies</a></li>
+                                    <li><a href="#">Sprays y Rocíos para el Cuerpo</a></li>
+                                    <li><a href="#">Tratamientos</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">NIÑOS</a>
+                                <ul>
+                                    <li><a href="#">Bebés</a></li>
+                                    <li><a href="#">Pequeños</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">HOMBRES</a>
+                                <ul>
+                                    <li><a href="#">Cuidado Personal</a></li>
+                                    <li><a href="#">Desodorantes</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">MARCAS</a>
+                                <ul>
+                                    <li><a href="#">Botanical Expertise</a></li>
+                                    <li><a href="#">Define Your Body</a></li>
+                                    <li><a href="#">Epic</a></li>
+                                    <li><a href="#">Force Magnétique</a></li>
+                                    <li><a href="#">JAFRA Daily</a></li>
+                                    <li><a href="#">JAFRA Foot Care</a></li>
+                                    <li><a href="#">JAFRA Spa</a></li>
+                                    <li><a href="#">JF9</a></li>
+                                    <li><a href="#">J-Sport</a></li>
+                                    <li><a href="#">Legend</a></li>
+                                </ul>
+                            </li>
+                        </ul>                            
+                    </li>
+                    <li><a href="#"><strong>Ofertas Especiales</strong></a></li>
+                    <li><a href="#"><strong>Ayudas de venta</strong></a>
+                        <ul>
+                            <li><a href="#">Programa Anfitriona</a></li>
+                            <li><a href="#">Loyalty Club</a></li>
+                            <li><a href="#">Suministro para Clases</a></li>
+                            <li><a href="#">Herramientas para Patrocinio</a></li>
+                            <li><a href="#">Literatura</a>
+                                <ul>
+                                    <li><a href="#">Folletos</a></li>
+                                    <li><a href="#">Forma Del Cleinte para Llenar</a></li>
+                                    <li><a href="#">Catálogos de Productos</a></li>
+                                    <li><a href="#">Baño y cuerpo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Muestrarios</a>
+                                <ul>
+                                    <li><a href="#">Cuidado del Cutis</a></li>
+                                    <li><a href="#">Fragrancias</a></li>
+                                    <li><a href="#">Color</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mitem"><a href="#">Mi Negocio</a></div>
+        <div class="mitem"><a href="#">Novedades</a></div>
+        <div class="mitem"><a href="#">METAS</a></div>
+        <div class="mitem"><a href="#">Patrocinio</a></div>
+    </div>
+      
+    <div class="mob-bottom">
+    	<ul class="list-unstyled">
+        	<li><a href="#">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+  </div>
+  
+  <div id="page">
+  	  <!-- MOBILE MENU BUTTON -->
+      <button type="button" class="mm-toggle is-closed animated fadeInLeft" data-toggle="offcanvas"> 
+    	<span class="hamb-top"></span> 
+        <span class="hamb-middle"></span> 
+        <span class="hamb-bottom"></span> 
+      </button>
+      
+      <!-- Start Header -->
+      <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="logo text-center">
+                    <a href="#"><span><img src="images/logo.png" alt="jafra"></span></a>
+                </div>
+                <div class="head-info row hidden-xs">
+                    <div class="col-xs-6">
+                        <div class="consultant">
+                            <img src="images/avatar_man.jpg" alt="">
+                            <div class="info-box">
+                                <span class="name">Nombre</span>
+                                <span class="title">Categoría</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="top-menu">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a href="#">Cerrar Sesión</a></li>
+                                <li><a href="#">Mi Cuenta</a></li>
+                                <li class="open-close notification"><a href="javascript:void()" class="opener"><i class="fa fa-bell"></i></a>
+                                    <div class="slide notification-box">
+                                        Notifications.
+                                    </div>
+                                </li>
+                                <li class="cart"><a href="javascript:void()"><i class="fa fa-shopping-cart"></i> (0)</a></li>
+                                <li class="open-close search"><a href="javascript:void()" class="opener"><i class="fa fa-search"></i></a>
+                                    <div class="slide search-box">
+                                        <div class="search-form">
+                                            <input name="" type="search" id="txtTopSearch">
+                                            <button type="submit" id="btnSearch" class="btnSearch"><i class="fa fa-search"></i></button>
+                                        </div>
+                                        <div class="search-list" style="display:none;">
+                                            <div id="loadingSearchImage">
+                                                <i class="fa fa-spinner fa-spin"></i> Searching products...
+                                            </div>
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                  <a href="#">
+                                                    <span class="title">
+                                                        <strong>Royal Jelly</strong> Classic Duo
+                                                        <em>5555551</em>	
+                                                    </span>
+                                                    <span class="product-img">
+                                                        <img src="images/search-img.jpg" alt="">
+                                                    </span>
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a href="#">
+                                                    <span class="title">
+                                                        Microdermabrasion <strong>Kit</strong>
+                                                        <em>5555551</em>	
+                                                    </span>
+                                                    <span class="product-img">
+                                                        <img src="images/search-img.jpg" alt="">
+                                                    </span>
+                                                  </a>
+                                                </li>
+                                                <li>
+                                                  <a href="#">
+                                                    <span class="title">
+                                                        Double Nature Glam Bonus Size
+                                                        <em>5555551</em>	
+                                                    </span>
+                                                    <span class="product-img">
+                                                        <img src="images/search-img.jpg" alt="">
+                                                    </span>
+                                                  </a>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="results">see all results <i class="fa fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Top-->
+        <div class="header-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="#">CONTÁCTANOS</a>
+                    </div>
+                    <div class="col-xs-6 text-right">
+                        <div class="btn-group language">
+                          <button type="button" class="btn-lang dropdown-toggle" data-toggle="dropdown">Español <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Español</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End Header Bottom-->
+      </header>
+      <!-- End Header -->
+  
+      <!-- Start Nav -->
+      <nav id="nav">
+        <div class="container">
+            <div class="menu hidden-xs">
+                <ul class="nav">
+                	<li><a href="#">PRODUCTOS</a>
+                        <div class="sub-nav">
+                            <ul class="nav nav-tabs">
+                                <li><a href="#">CUIDADO DEL CUTIS</a>
+                                    <div class="sub-nav1 skincare">
+                                        <div class="nav-wrap">
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">LIMPIAR</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Exfoliante</a></li>
+                                                        <li><a href="#">Limpiador</a></li>
+                                                        <li><a href="#">Loción Facial</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">REGÍMENES</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Royal Jelly</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">HUMECTAR</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Día</a></li>
+                                                        <li><a href="#">Noche</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">TRATAMIENTO</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cuidado para Ojos</a></li>
+                                                        <li><a href="#">Mascarillas</a></li>
+                                                        <li><a href="#">Sueros y Tratamientos para el Rostro</a></li>
+                                                        <li><a href="#">Tratamientos para el Acné</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">ACCESORIOS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cepillo Limpiador</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">PROTECCIÓN SOLAR</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cuerpo</a></li>
+                                                        <li><a href="#">Rostro</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">MARCAS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Advanced Dynamics</a></li>
+                                                        <li><a href="#">Beauty Dynamics</a></li>
+                                                        <li><a href="#">Brightening Dynamics</a></li>
+                                                        <li><a href="#">Gold Dynamics</a></li>
+                                                        <li><a href="#">JAFRA PRO</a></li>
+                                                        <li><a href="#">JAFRA Sun</a></li>
+                                                        <li><a href="#">JAFRA Teens</a></li>
+                                                        <li><a href="#">Matte Dynamics</a></li>
+                                                        <li><a href="#">Royal Jelly</a></li>
+                                                        <li><a href="#">Time Dynamics</a></li>
+                                                    </ul>
+                                                    <a href="#" class="more">MÁS MARCAS</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-img">
+                                                <span class="img-block">
+                                                    <img src="images/96276_soniccleanser_580.jpg" alt="">
+                                                </span>
+                                                <span class="title">Descubre una nueva manera de limpiar tu piel.</span>
+                                                <span class="learn-more">
+                                                    <a href="#">CONOCE MÁS</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="sub-nav-footer">
+                                            <span>Una piel hermosa siempre estará de moda</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">FRAGANCIAS</a>
+                                	<div class="sub-nav1 fragrance">
+                                        <div class="nav-wrap">
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">DAMAS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Damas</a></li>
+                                                        <li><a href="#">Jóvenes</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">CABALLEROS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Caballeros</a></li>
+                                                        <li><a href="#">Jóvenes</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">NIÑOS</a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">MARCAS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Adorisse</a></li>
+                                                        <li><a href="#">Blazon</a></li>
+                                                        <li><a href="#">Bloom</a></li>
+                                                        <li><a href="#">Coreta</a></li>
+                                                        <li><a href="#">Diamonds</a></li>
+                                                        <li><a href="#">Double Nature</a></li>
+                                                        <li><a href="#">Draumur</a></li>
+                                                        <li><a href="#">Eau d'Aromes</a></li>
+                                                        <li><a href="#">Epic</a></li>
+                                                        <li><a href="#">Force Magnétique</a></li>
+                                                    </ul>
+                                                    <a href="#" class="more">MÁS MARCAS</a>
+                                                </div>
+                                            </div>
+                                            <div class="col">&nbsp;</div>
+                                            <div class="col-img">
+                                                <span class="img-block">
+                                                    <img src="images/fragrance.jpeg" alt="">
+                                                </span>
+                                                <span class="title">Vive la inspiración parisina</span>
+                                                <span class="learn-more">
+                                                    <a href="#">CONOCE MÁS</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="sub-nav-footer">
+                                            <span>La fragancia correcta hace la mejor primera impresión</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">MAQUILLAJE</a>
+                                	<div class="sub-nav1 color">
+                                        <div class="nav-wrap">
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">BROCHAS Y ACCESORIOS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Accesorios para Uñas</a></li>
+                                                        <li><a href="#">Brochas para Maquillaje</a></li>
+                                                        <li><a href="#">Sacapuntas</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">OJOS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cejas</a></li>
+                                                        <li><a href="#">Delineador</a></li>
+                                                        <li><a href="#">Máscara</a></li>
+                                                        <li><a href="#">Removedor de Maquillaje</a></li>
+                                                        <li><a href="#">Sombras</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">UÑAS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Esmalte</a></li>
+                                                        <li><a href="#">Removedor de Esmalte</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">LABIOS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Brillo</a></li>
+                                                        <li><a href="#">Delineador</a></li>
+                                                        <li><a href="#">Labial</a></li>
+                                                        <li><a href="#">Removedor de Maquillaje</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">ROSTRO</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Base</a></li>
+                                                        <li><a href="#">CC Cream</a></li>
+                                                        <li><a href="#">Corrector</a></li>
+                                                        <li><a href="#">Iluminador</a></li>
+                                                        <li><a href="#">Maquillaje</a></li>
+                                                        <li><a href="#">Polvo</a></li>
+                                                        <li><a href="#">Rubor</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">COLOR</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Azules y Verdes</a></li>
+                                                        <li><a href="#">Blancos</a></li>
+                                                        <li><a href="#">Cafés</a></li>
+                                                        <li><a href="#">Ciruelas</a></li>
+                                                        <li><a href="#">Corales</a></li>
+                                                        <li><a href="#">Negros y Metálicos</a></li>
+                                                        <li><a href="#">Neutros</a></li>
+                                                        <li><a href="#">Rojos</a></li>
+                                                        <li><a href="#">Rosados</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">MARCAS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Beauty Dynamics</a></li>
+                                                        <li><a href="#">JAFRA Beauty</a></li>
+                                                        <li><a href="#">Royal Jelly</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-img">
+                                                <span class="img-block">
+                                                    <img src="images/20714_0.jpg" alt="">
+                                                </span>
+                                                <span class="title">Aplica tus productos con un toque profesional.</span>
+                                                <span class="learn-more">
+                                                    <a href="#">CONOCE MÁS</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="sub-nav-footer">
+                                            <span>You were born for color: Live it up.</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#">BAÑO Y CUERPO</a>
+                                	<div class="sub-nav1 toiletries">
+                                        <div class="nav-wrap">
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">BAÑO</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Baño y Regadera</a></li>
+                                                        <li><a href="#">Tratamientos Spa</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">CABELLO</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Acondicionador</a></li>
+                                                        <li><a href="#">Mascarillas y Tratamientos</a></li>
+                                                        <li><a href="#">Shampoo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">CUERPO</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cuidado de los Labios</a></li>
+                                                        <li><a href="#">Desodorantes</a></li>
+                                                        <li><a href="#">Humectantes</a></li>
+                                                        <li><a href="#">Manos</a></li>
+                                                        <li><a href="#">Pies</a></li>
+                                                        <li><a href="#">Sprays y Rocíos para el Cuerpo</a></li>
+                                                        <li><a href="#">Tratamientos</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">NIÑOS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Bebés</a></li>
+                                                        <li><a href="#">Pequeños</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">HOMBRES</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cuidado Personal</a></li>
+                                                        <li><a href="#">Desodorantes</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">MARCAS</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Botanical Expertise</a></li>
+                                                        <li><a href="#">Define Your Body</a></li>
+                                                        <li><a href="#">Epic</a></li>
+                                                        <li><a href="#">Force Magnétique</a></li>
+                                                        <li><a href="#">JAFRA Daily</a></li>
+                                                        <li><a href="#">JAFRA Foot Care</a></li>
+                                                        <li><a href="#">JAFRA Spa</a></li>
+                                                        <li><a href="#">JF9</a></li>
+                                                        <li><a href="#">J-Sport</a></li>
+                                                        <li><a href="#">Legend</a></li>
+                                                    </ul>
+                                                    <a href="#" class="more">MÁS MARCAS</a>
+                                                </div>
+                                            </div>
+                                            <div class="col-img">
+                                                <span class="img-block">
+                                                    <img src="images/9438.jpg" alt="">
+                                                </span>
+                                                <span class="title">Consiéntelos con delicados aromas y fórmulas suaves.</span>
+                                                <span class="learn-more">
+                                                    <a href="#">CONOCE MÁS</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="sub-nav-footer">
+                                            <span>Despierta tus sentidos, inspira tu espíritu</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li><a href="#"><strong>Ofertas Especiales</strong></a></li>
+                                <li><a href="#"><strong>Ayudas de venta</strong></a>
+                                	<div class="sub-nav1 consultant-offer">
+                                        <div class="nav-wrap">
+                                            <div class="col">
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">Programa Anfitriona</a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">Loyalty Club</a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">Suministro para Clases</a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">Herramientas para Patrocinio</a>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">Literatura</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Folletos</a></li>
+                                                        <li><a href="#">Forma Del Cleinte para Llenar</a></li>
+                                                        <li><a href="#">Catálogos de Productos</a></li>
+                                                        <li><a href="#">Baño y cuerpo</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="item">
+                                                    <a href="#" class="subCatgory">Muestrarios</a>
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="#">Cuidado del Cutis</a></li>
+                                                        <li><a href="#">Fragrancias</a></li>
+                                                        <li><a href="#">Color</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Mi Negocio</a></li>
+                    <li><a href="#">Novedades</a></li>
+                    <li><a href="#">METAS</a></li>
+                    <li><a href="#">Patrocinio</a></li>
+                </ul>
+            </div>
+        </div>
+      </nav>
+      <!-- End Nav -->
+      
+      <!-- Start Content Area -->
+      <main id="main">
+        <!--Breadcrumb-->
+        <div class="breadcrumb">
+            <div class="container">
+                <ul class="list-unstyled">
+                    <li><a href="#">INICIO</a></li>
+                    <li class="active">CUIDADO DEL CUTIS</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--Promobar-->
+        <div class="promo-bar">
+        	<div class="container">
+            	<p><em>Obtén la mejor oferta de nuestra línea legendaria Royal Jelly para el Cuidado de la Piel. No te la pierdas. <a href="#">¡Es una oferta por tiempo limitado!</a></em></p>
+            </div>
+        </div>
+        
+        <!--Catalog-->
+        <div class="catalog content-wrapper">
+                <div class="container">
+                    <!-- PRODUCTS -->
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <!--Sidebar-->
+                            <aside id="sidebar">
+                                <div class="filteritem">
+                                	<a href="#" class="title">LIMPIAR</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Exfoliante</a></li>
+                                    	<li><a href="#">Limpiador</a></li>
+                                        <li><a href="#">Loción Facial</a></li>
+                                    </ul>
+                                    <a href="#" class="title">REGÍMENES</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Royal Jelly</a></li>
+                                    </ul>
+                                    <a href="#" class="title">HUMECTAR</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Día</a></li>
+                                        <li><a href="#">Noche</a></li>
+                                    </ul>
+                                    <a href="#" class="title">TRATAMIENTO</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Cuidado Para Ojos</a></li>
+                                        <li><a href="#">Mascarillas</a></li>
+                                        <li><a href="#">Sueros Y Tratamientos Para El Rostro</a></li>
+                                        <li><a href="#">Tratamientos Para El Acné</a></li>
+                                    </ul>
+                                    <a href="#" class="title">ACCESORIOS</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Cepillo Limpiador</a></li>
+                                    </ul>
+                                    <a href="#" class="title">PROTECCIÓN SOLAR</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Cuerpo</a></li>
+                                        <li><a href="#">Rostro</a></li>
+                                    </ul>
+                                    <a href="#" class="title">MARCAS</a>
+                                    <ul class="list-item">
+                                    	<li><a href="#">Advanced Dynamics</a></li>
+                                        <li><a href="#">Beauty Dynamics</a></li>
+                                        <li><a href="#">Brightening Dynamics</a></li>
+                                        <li><a href="#">Gold Dynamics</a></li>
+                                        <li><a href="#">JAFRA PRO</a></li>
+                                        <li><a href="#">JAFRA Sun</a></li>
+                                        <li><a href="#">JAFRA Teens</a></li>
+                                        <li><a href="#">Matte Dynamics</a></li>
+                                        <li><a href="#">Royal Jelly</a></li>
+                                        <li><a href="#">Time Dynamics</a></li>
+                                    </ul>
+                                </div>
+                            </aside><!--End Sidebar-->
+                        </div>
+                        <div class="col-md-9 col-sm-9">
+                        	<div class="search-result">
+                                <div class="sort">
+                                    <select class="sorting">
+                                        <option>Buscar por</option>
+                                        <option>El más nuevo</option>
+                                        <option>Orden alfabético</option>
+                                        <option>Precio (Más Alto a Más Bajo)</option>
+                                        <option>Precio (Más Bajo a Más Alto)</option>
+                                    </select>
+                                </div>
+                                <h3 class="text-center">CUIDADO DEL CUTIS</h3>
+                            </div>
+                    
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item item-hover text-center">
+                                        <div class="item-image-wrapper">
+                                            <img src="images/pic02.jpg" alt="">
+                                            <a href="javascript:void()" class="btn btn-blue quickview" data-toggle="modal" data-target="#quickView">AGREGAR A LA ORDEN</a>
+                                        </div>
+                                        <div class="item-meta-container">
+                                            <h3 class="item-name">Royal Jelly Global Longevity Eye Crème</h3>
+                                            <div class="item-price">$11.00</div>
+                                            <div class="item-action">
+                                                <a href="javascript:void()" class="btn btn-blue addcartbtn">AGREGAR AL PEDIDO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item item-hover text-center">
+                                        <div class="item-image-wrapper">
+                                            <img src="images/pic03.jpg" alt="">
+                                            <a href="javascript:void()" class="btn btn-blue quickview" data-toggle="modal" data-target="#quickView">AGREGAR A LA ORDEN </a>
+                                        </div>
+                                        <div class="item-meta-container">
+                                            <h3 class="item-name">Royal Jelly Global Longevity Crème Duo</h3>
+                                            <div class="item-price">$11.00</div>
+                                            <div class="item-action">
+                                                <a href="javascript:void()" class="btn btn-blue addcartbtn">AGREGAR AL PEDIDO</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                                    <div class="item item-hover text-center">
+                                        <div class="item-image-wrapper">
+                                            <img src="images/pic04.jpg" alt="">
+                                            <a href="javascript:void()" class="btn btn-blue quickview" data-toggle="modal" data-target="#stockOut">AGREGAR A LA ORDEN </a>
+                                        </div>
+                                        <div class="item-meta-container">
+                                            <h3 class="item-name">Royal Jelly Booster Duo</h3>
+                                            <div class="item-price">$11.00</div>
+                                            <div class="stockout text-uppercase">PRODUCTO AGOTADO</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      </main>
+      <!-- End Content Area -->
+  
+      <!-- Start Footer -->
+      <footer class="footer">
+        <div class="seprator-hold">
+            <img src="images/seprator01.png" alt="" >
+        </div>
+        <div class="footer-social">
+            <div class="container">
+                <ul class="social-network">
+                    <li><a href="https://www.facebook.com/jafrausa" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.youtube.com/user/JAFRACosmeticsUSA" target="_blank" class="youtube"><i class="fa fa-youtube"></i></a></li>
+                    <li><a href="https://instagram.com/jafrausa" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://pinterest.com/jafrausa" target="_blank" class="pinterest"><i class="fa fa-pinterest-p"></i></a></li>
+                    <li><a href="https://twitter.com/JAFRAusa" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-nav">
+            <div class="container">
+                <ul class="list-unstyled">
+                    <li><a href="#">SERVICIO AL CONSULTORA</a></li>
+                    <li><a href="#">ACERCA DE JAFRA</a></li>
+                    <li><a href="#">DSA</a></li>
+                    <li><a href="#">Términos y Condiciones</a></li>
+                    <li><a href="#">POLÍTICA Y PROCEDIMIENTOS</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Vorwerk</a></li>
+                </ul>
+                <span>&copy; 2016 JAFRA</span>
+            </div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+      
+  </div><!-- End Page -->
+  
+  <!-- Modal -->
+  <div class="modal fade cpop" id="quickView" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">AGREGAR A LA ORDEN</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row quick-product-info">
+          	<div class="col-sm-5 text-center">
+            	<div class="img-wrapper">
+            		<img src="images/pic01.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-sm-7">
+            	<h4>Teen Skin Care Regimen</h4>
+                <div class="item"># de Artículo 81806</div>
+                <div class="price"><span class="old-price">$25.00</span> <span class="sale-price">$25.00</span></div>
+                <div class="qwidth">
+                    <div class="input-group spinner">
+                        <input id="qty" type="text" class="form-control" value="1" min="1" max="99" onkeypress="return isNumber(event)" onInput="checkLength()">
+                        <div class="input-group-btn-vertical">
+                            <button class="btn btn-default" type="button"><i class="fa fa-caret-up"></i></button>
+                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <a href="javascript:void()" class="btn btn-blue addcartbtn">AGREGAR AL PEDIDO</a>
+                <p>Product description goes here. Leave enough space for a minimun of 8 lines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="modal fade cpop" id="stockOut" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">AGREGAR A LA ORDEN </h4>
+        </div>
+        <div class="modal-body">
+          <div class="row quick-product-info">
+          	<div class="col-sm-5 text-center">
+            	<div class="img-wrapper">
+            		<img src="images/pic01.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-sm-7">
+            	<h4>Teen Skin Care Regimen</h4>
+                <div class="item"># de Artículo 81806</div>
+                <div class="price"><span class="old-price">$25.00</span> <span class="sale-price">$25.00</span></div>
+                <div class="stockout text-uppercase">PRODUCTO AGOTADO</div>
+                <p>Product description goes here. Leave enough space for a minimun of 8 lines.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.main.js"></script>
+  <script src="js/jcf.js"></script>
+  <script src="js/jcf.select.js"></script>
+  <script src="js/jquery.mobile-menu.min.js"></script>
+  <script>
+  	$(function(){
+		jcf.setOptions('Select', {
+        	wrapNative: false,
+        	wrapNativeOnMobile: false
+    	});
+    	jcf.replaceAll();
+				
+		$('.spinner .btn:first-of-type').on('click', function() {
+		  var btn = $(this);
+		  var input = btn.closest('.spinner').find('input');
+		  if (input.attr('max') == undefined || parseInt(input.val()) < parseInt(input.attr('max'))) {    
+			input.val(parseInt(input.val(), 10) + 1);
+		  } else {
+			btn.next("disabled", true);
+		  }
+		});
+		$('.spinner .btn:last-of-type').on('click', function() {
+		  var btn = $(this);
+		  var input = btn.closest('.spinner').find('input');
+		  if (input.attr('min') == undefined || parseInt(input.val()) > parseInt(input.attr('min'))) {    
+			input.val(parseInt(input.val(), 10) - 1);
+		  } else {
+			btn.prev("disabled", true);
+		  }
+		});
+	})
+	
+	function isNumber(evt) {
+    	evt = (evt) ? evt : window.event;
+    	var charCode = (evt.which) ? evt.which : evt.keyCode;
+		if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+			return false;
+		}
+		return true;
+	}
+	function checkLength(){
+    	var fieldLength = document.getElementById('qty').value.length;
+		if(fieldLength <= 2){
+			return true;
+		}
+		else
+		{
+		var str = document.getElementById('qty').value;
+		str = str.substring(0, str.length - 1);
+		document.getElementById('qty').value = str;
+		}
+    }
+	
+  	$(document).ready(function() {
+		$("#nav li").hover(function() {
+			$(this).addClass('hover');
+		}, function() {
+			$(this).removeClass('hover');
+		});
+		
+		$(".sub-nav li").hover(function() {
+			$(this).addClass('hover');
+		}, function() {
+			$(this).removeClass('hover');
+		});
+		
+		$("#btnSearch").click(function(){
+			$(".search-list").slideToggle();
+		});
+		
+		$(".search-form input").keypress(function(e) {
+        	if (e.keyCode == 13) {
+            	$(".search-list").show();
+        	}
+    	});
+		
+		$('.addcartbtn').click(function(e){
+		   $(this).text('AGREGADO AL PEDIDO');
+		   setTimeout(function(){
+			   $(e.target).text('AGREGAR AL PEDIDO');
+			}, 2000);
+		});
+		
+		$(".mob-top .search").click(function(){
+      		$(".mobsearch").slideToggle();
+    	});
+		
+		$(".sidenav .mobmenu a").click(function(){
+			$(".subitem").slideToggle();
+			$(this).toggleClass('icon-minus');
+		});
+		
+		$("#mobile-menu").mobileMenu({
+			MenuWidth: 250,
+			SlideSpeed : 300,
+			WindowsMaxWidth : 767,
+			PagePush : true,
+			FromLeft : true,
+			Overlay : true,
+			CollapseMenu : true,
+			ClassName : "mobile-menu"
+		});
+		
+		var trigger = $('.mm-toggle'),
+		isClosed = false;
+
+		trigger.click(function () {
+		  hamburger_cross();      
+		});
+		
+		function hamburger_cross() {
+		  if (isClosed == true) {          
+			trigger.removeClass('is-open');
+			trigger.addClass('is-closed');
+			isClosed = false;
+		  } else {   
+			trigger.removeClass('is-closed');
+			trigger.addClass('is-open');
+			isClosed = true;
+		  }
+  		}
+		
+	})
+  </script>
+</body>
+</html>

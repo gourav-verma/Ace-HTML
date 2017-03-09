@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> </title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- MOBILE MENU CSS -->
+  <link href="css/jquery.mobile-menu.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="overlay"></div>
+  <div id="fsCycler"></div>
+
+  <!-- MOBILE MENU -->
+  <div id="mobile-menu">
+    <div class="sidenav">
+        <div class="mitem"><a href="javascript:void()" data-toggle="modal" data-target="#become-consultant">Become a Consultant</a></div>
+        <div class="mitem"><a href="javascript:void()" data-toggle="modal" data-target="#refer-friend">Refer a friend</a></div>
+        <ul class="mobile-menu">
+            <li><a href="#">Language</a>
+                <ul>
+                    <li><a href="#">English</a></li>
+                    <li><a href="#">Español</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+      
+    <div class="mob-bottom">
+        <ul class="list-unstyled">
+            <li><a href="#">Consultant Log Out</a></li>
+        </ul>
+    </div>
+  </div>
+
+  <div id="page" class="consultant-login">
+    <!-- Start Header -->
+    <div class="clogin-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-1 col-sm-4 col-xs-12 chead-left">
+                    <!-- MOBILE MENU BUTTON -->
+                    <button type="button" class="mm-toggle is-closed animated fadeInLeft" data-toggle="offcanvas"> 
+                        <span class="hamb-top"></span> 
+                        <span class="hamb-middle"></span> 
+                        <span class="hamb-bottom"></span> 
+                    </button>
+
+                    <div class="clogo">
+                        <a href="#"><img src="images/logo03.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-8 col-xs-12 chead-right hidden-xs">
+                    <span><a href="javascript:void()" data-toggle="modal" data-target="#become-consultant">Become a Consultant</a></span>
+                    <span>
+                        <div class="btn-group language">
+                          <button type="button" class="btn-lang dropdown-toggle" data-toggle="dropdown">English <span class="caret"></span></button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Español</a></li>
+                          </ul>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Content Area -->
+    <main id="main">
+        <div class="container">
+            <!-- Login Wrapper -->
+            <div class="clogin-wrapper">
+                <div class="holder">
+                    <div class="logo">
+                        <img src="images/logo02.png" alt="">
+                    </div>
+                    <h1 class="head">Consultant Login</h1>
+                    <form class="login-form lform">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Consultant ID">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="link-group">
+                            <button type="submit" class="btn btn-red-light">Log in</button>
+                            <span><a href="javascript:void()" data-toggle="modal" data-target="#forget-password">Forgot password?</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Content Area -->
+
+    <!-- Forget Password Modal -->
+    <div class="modal fade cpop" id="forget-password">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Forgot Password</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="forget popup-page">
+                        <div class="defaultPage">
+                            <p>Your consultant password is the last four digits of your social security number, unless you have reset password.</p>
+                            <p>If you would like to reset your password, Please enter your Consultant ID. Next choose either your email address and Instructions on how to Reset your Password will be sent. If you do not have an email on file please contact our support team</p>
+                            <form id="cpa-form" class="modal-form xform">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Consultant ID">
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-red-light">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="delivery-method" style="display:none;">
+                            <form id="cpa-form1" class="modal-form xform">
+                                <p>Pick your Delivery Method </p>
+                                <div class="radio light">
+                                    <label>
+                                        <input type="radio"> C**********4@gmail.com
+                                    </label>
+                                </div>
+                                <div class="radio light">
+                                    <label>
+                                        <input type="radio"> XXX-XXX-4008
+                                    </label>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-red-light">Reset Password</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="showMsg" style="display:none; padding:20px 0 80px 0;">
+                            <p>Password reset instructions have been sent to your e-mail address or Cell Phone Number</p>
+                        </div>
+
+                        <div class="help">
+                            <p class="subhead">If you have further questions please contact our support team.</p>  
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p><strong>Phone Number</strong></p>
+                                    <p>1-800-852-3728</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p><strong>Phone Hours</strong></p>
+                                    <p>Mon-Fri 9am-6pm Pacific</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p><strong>Email</strong></p>
+                                    <p><a href="mailto:jafracares@jafra.com">jafracares@jafra.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Become Consultant Modal -->
+    <div class="modal fade cpop" id="become-consultant">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">JOIN JAFRA TODAY</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="become-consultant popup-page">
+                        <h3 class="text-center">Contact Information</h3>
+                        <p class="text-center">Start by entering your contact information below.</p>
+                        <div class="form-horizontal">
+                            <form id="" class="modal-form xform">
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Name</label>
+                                    <div class="col-sm-9">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="" placeholder="First">
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <input type="text" class="form-control" id="" placeholder="Last">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Email Address</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="" placeholder="example@gmail.com">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Phone Number</label>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control" id="" placeholder="(___) ___-____">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-sm-3">&nbsp;</label>
+                                    <div class="col-sm-9">
+                                        <button type="submit" class="btn btn-red-light">Continue</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Info Links -->
+    <div class="clogin-info-links">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="http://join.jafra.com/?lang=en-US#freedom_flexibility" target="_blank">Why Jafra</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="http://join.jafra.com/#why_jafra_lifestyle" target="_blank">How it works?</a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="https://www.jafra.com/customer-service/contact-us/" target="_blank">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <div class="clogin-footer">
+        <div class="socket">
+            <div class="container">
+                <p class="text-center">Customer Relationships <span>1-800-852-3728</span> Hours available Mon-Fri 8:00 AM - 6:00 PM PST.</p>
+            </div>
+        </div>
+        <div class="contentinfo">
+            <div class="container">
+                <ul class="disclaimer list-unstyled">
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Privacy</a></li>
+                </ul>
+                <div class="copyright">
+                    &copy; 2014 - <a href="#">JAFRA Cosmetics International</a> - All Rights Reserved
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+  </div><!-- End Page -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.main.js"></script>
+  <script src="js/jquery.mobile-menu.min.js"></script>
+  <script src="js/jquery.fullscreenCycler.js"></script>
+  <script type="text/javascript">
+    (function($) {
+      var i = new Array("images/slide/img01.jpg","images/slide/img01.jpg","images/slide/img01.jpg");
+
+          $('#fsCycler').fullscreenSlider({
+            speed: 1,
+            transitionSpeed: 2,
+            backgroundColor: "transparent",
+            images: i
+        });
+    })(jQuery);
+  </script>
+  <script type="text/javascript">
+    $("#cpa-form").submit(function(e){
+      e.preventDefault();
+      $(".forget .delivery-method").show();
+      $(".forget #cpa-form").hide();
+    });
+
+    $("#cpa-form1").submit(function(e){
+      e.preventDefault();
+      $(".forget .showMsg").show();
+      $(".forget .defaultPage").hide();
+      $(".forget .delivery-method").hide();
+    });
+
+    $("#rst-form").submit(function(e){
+      e.preventDefault();
+      $(".reset .reset-password-success").show();
+      $(".reset .defaultPage").hide();
+    });
+
+    $("#mobile-menu").mobileMenu({
+        MenuWidth: 250,
+        SlideSpeed : 300,
+        WindowsMaxWidth : 767,
+        PagePush : true,
+        FromLeft : true,
+        Overlay : true,
+        CollapseMenu : true,
+        ClassName : "mobile-menu"
+    });
+        
+    var trigger = $('.mm-toggle'),
+    isClosed = false;
+
+    trigger.click(function () {
+        hamburger_cross();      
+    });
+        
+    function hamburger_cross() {
+      if (isClosed == true) {          
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+    }
+  </script>
+
+</body>
+</html>

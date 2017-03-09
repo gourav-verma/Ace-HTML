@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> </title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- Theme CSS -->
+  <link href="css/style.css" rel="stylesheet">
+  <!-- MOBILE MENU CSS -->
+  <link href="css/jquery.mobile-menu.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div id="page">
+  
+      <!-- Start Header -->
+      <div class="login-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-xs-4">
+                    <a href="#"><img src="images/logo03.png" alt=""></a>
+                </div>
+                <div class="col-sm-6 col-xs-8 text-right">
+                    <a href="#" class="btn btn-red-light">No soy Consultor(a)</a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <!-- End Header -->
+  
+      <!-- Start Content Area -->
+      <main id="main">
+        <div class="container">
+            <!-- Login Wrapper -->
+            <div class="login-wrapper">
+                <h2>¡Bienvenido(a) a tu portal de negocio!</h2>
+                <div class="holder">
+                    <form class="login-form lform">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Veliz">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="NIJ">
+                        </div>
+                        <button type="submit" class="btn btn-red-light">INGRESAR</button>
+                        <div class="forget-link">
+                            <a href="javascript:void()" data-toggle="modal" data-target="#forget-password">¿Olvidaste tu NIJ?</a> <br>
+                            <a href="javascript:void()" data-toggle="modal" data-target="#reset-password">reset</a>
+                        </div>
+                    </form>
+                </div>
+                <p class="note text-center">Te informamos que la página JAFRAnet se encontrará habilitada el día de hoy CIERRE DE MES  hasta las 12:00 a.m. (hora del centro) y la atención de la oficina JAFRA que te atiende así como el Centro de Atención Telefónica sera hasta las 6:00 p.m.</p>
+            </div>
+
+        </div> <!-- End Container -->
+      </main>
+      <!-- End Content Area -->
+
+    <!-- Forget Password Modal -->
+    <div class="modal fade cpop" id="forget-password">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">¿Olvidaste tu NIJ?</h4>
+          </div>
+          <div class="modal-body">
+            <div class="forget popup-page">
+                <div class="showMsg" style="display:none;">
+                  <h3>Las instrucciones para obtener un nuevo NIJ han sido enviadas al Correo Electrónico proporcionados.</h3>
+                </div>
+
+                <div class="showEmail" style="display:none;">
+                  <p>Las instrucciones para restablecer tu NIJ se enviarán <br>
+                  a la dirección de correo electrónico que selecciones.</p>
+                  <form id="cpa-form1" class="modal-form lform">
+                    <div class="radio light">
+                      <label>
+                        <input type="radio"> C**********4@gmail.com
+                      </label>
+                    </div>
+                    <button type="submit" class="btn btn-red-light">SIGUIENTE</button>
+                  </form>
+                </div>
+
+                <div class="defaultPage">
+                  <p>Recuerda que tu NIJ está impreso en tu última nota de venta.</p>
+                  <p>Si deseas restablecer tu NIJ, ingresa el Veliz.</p>
+                  <form id="cpa-form" class="modal-form lform">
+                      <div class="form-group">
+                          <input type="text" class="form-control" placeholder="VELIZ">
+                      </div>
+                      <button type="submit" class="btn btn-red-light">SIGUIENTE</button>
+                  </form>
+                </div>
+
+                <div class="help">
+                  <p class="subhead">También puedes acudir a tu Oficina Regional o Centro de Servicio más cercano o puedes comunicarte al Centro de Atención Telefónica:</p>  
+                  <div class="row">
+                    <div class="col-sm-6">
+                        <p><strong>Número Telefónico</strong></p>
+                        <p>01(55) 5490-1710</p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p><strong>Horario de Atención</strong></p>
+                        <p>Lun-Vie 8 a.m. -5 p.m.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reset Password Modal -->
+    <div class="modal fade cpop" id="reset-password">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">¿Olvidaste tu NIJ?</h4>
+          </div>
+          <div class="modal-body">
+            <div class="reset popup-page">
+              <div class="showMsg" style="display:none;">
+                <h3>Tu nuevo NIJ ha sido actualizado correctamente. </h3>
+                <a href="javascript:void()" class="btn btn-red-light" data-dismiss="modal">INGRESAR</a>
+              </div>
+
+              <div class="defaultPage">
+                <form id="rst-form" class="modal-form lform">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nuevo NIJ">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Confirma Nuevo NIJ">
+                    </div>
+                    <button type="submit" class="btn full btn-red-light">CAMBIAR NIJ</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+  </div><!-- End Page -->
+
+  <!-- jQuery -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    $("#cpa-form").submit(function(e){
+      e.preventDefault();
+      $(".forget .showEmail").show();
+      $(".forget .defaultPage").hide();
+    });
+
+    $("#cpa-form1").submit(function(e){
+      e.preventDefault();
+      $(".forget .showMsg").show();
+      $(".forget .showEmail").hide();
+      $(".forget .help p.subhead").html('Si tienes dudas, puedes acudir a tu Oficina Regional o Centro de Servicio más cercano o puedes comunicarte al Centro de Atención Telefónica');
+    });
+
+    $("#rst-form").submit(function(e){
+      e.preventDefault();
+      $(".reset .showMsg").show();
+      $(".reset .defaultPage").hide();
+    });
+
+  </script>
+</body>
+</html>
