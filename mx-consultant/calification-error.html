@@ -784,7 +784,7 @@
                     <div class="col-md-11 col-sm-12">
                         <div class="required-msg">*Campos Requeridos</div>
                         <div id="accordion">
-                            <h3>VELIZ A CALIFICAR</h3>
+                            <h3>DATOS GENERALES DE LA CALIFICACIÓN</h3>
                             <div>
                                 <div class="xform">
                                     <div class="form-horizontal">
@@ -816,9 +816,10 @@
                                 </div>
                                 <button class="next btn btn-red-light">Continuar</button>
                             </div>
-                            <h3>DATOS PERSONALES DEL CONSULTOR(A) A CALIFICAR</h3>
+                            <h3>DATOS DE EL/LA ASPIRANTE A CALIFICAR</h3>
                             <div>
                                 <div class="xform">
+                                    <p class="light">Es importante que el nombre esté correcto y el domicilio esté actualizado para que podamos enviarle con datos correctos sus órdes de pago.</p>
                                     <div class="form-horizontal">
                                         <div class="row">
                                             <div class="col-md-4 col-sm-6">
@@ -950,7 +951,7 @@
                                 <div class="xform" style="margin-top:40px;">
                                     <div class="form-horizontal">
                                         <div class="form-group has-error">
-                                            <label for="" class="col-md-4 col-sm-4 control-label">¿El Nombre de la Consultor(a) a calificar que aparece en pantalla es igual a su identificación oficial?</label>
+                                            <label for="" class="col-md-4 col-sm-4 control-label">¿El domicilio de el/la aspirante a calificar que aparece en pantalla es donde vive actualmente?</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <select id="identification">
                                                     <option>Seleccionar</option>
@@ -960,11 +961,11 @@
                                                 <span class="help-block">Desplegar error</span>
                                             </div>
                                             <div class="col-md-4 col-sm-4">
-                                                <a href="#" class="link01 light">Si la respuesta es No</a>
+                                                <a href="javascript:void()" class="link01 light" data-toggle="modal" data-target="#identificationModal">Si la respuesta es No</a>
                                             </div>
                                         </div>
                                         <div class="form-group has-error">
-                                            <label for="" class="col-sm-4 control-label">¿El Domicilio de la Consultor(a) a calificar que aparece en pantalla es correcto?</label>
+                                            <label for="" class="col-sm-4 control-label">¿El nombre de el/la aspirante a calificar que aparece en pantalla coincide con alguna identificación oficial?</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <select id="identification1">
                                                     <option>Seleccionar</option>
@@ -974,17 +975,17 @@
                                                 <span class="help-block">Desplegar error</span>
                                             </div>
                                             <div class="col-md-4 col-sm-4">
-                                                <a href="#" class="link01 light">Si la respuesta es No</a>
+                                                <a href="javascript:void()" class="link01 light" data-toggle="modal" data-target="#identificationModal">Si la respuesta es No</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <button class="next btn btn-red-light">Continuar</button>
                             </div>
-                            <h3>DATOS FISCALES DEL CONSULTOR(A) A CALIFICAR</h3>
+                            <h3>DATOS FISCALES DE/LA ASPIRANTE A CALIFICAR</h3>
                             <div>
-                                <p><em>Te invitamos a revisar el RFC y/o CURP y en caso de no mostrar información y/o estar incorrecto da clic en Modificarr
-</em></p>
+                                <p>Debido a requisitos gubernamentales, es obligatorio que el/la aspirante a calificar proporcione su CURP y RFC para poder enviarle las órdenes de pago que gane en su proceso de calificación.</p>
+                                <p><em>Por favor, revisa si el RFC y/o CURP de/la aspirante a calificar están correctos. </em></p>
                                 <div class="xform">
                                     <div class="form-horizontal">
                                         <div class="form-group has-error">
@@ -1007,7 +1008,7 @@
                                 <div class="xform" style="margin-top:30px;">
                                     <div class="form-horizontal">
                                         <div class="form-group has-error">
-                                            <label for="" class="col-md-4 col-sm-4 control-label">El RFC y el CRUP del Consultor(a) a calificar que aparece en pantalla es correcto</label>
+                                            <label for="" class="col-md-4 col-sm-4 control-label">¿El RFC y el CRUP de el/la aspirante a calificar que aparecen en pantalla están correctos?</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <select id="identification">
                                                     <option>Seleccionar</option>
@@ -1017,11 +1018,11 @@
                                                 <span class="help-block">Desplegar error</span>
                                             </div>
                                             <div class="col-md-4 col-sm-4">
-                                                <a href="#" class="link01 light">Si la respuesta es No</a>
+                                                <a href="javascript:void()" class="link01 light" data-toggle="modal" data-target="#identificationModal">Si la respuesta es No</a>
                                             </div>
                                         </div>
                                         <div class="form-group has-error">
-                                            <label for="" class="col-sm-4 control-label">A partir de que califiques como Animador(a), ¿cuál será el status fiscal de Retención ISR?</label>
+                                            <label for="" class="col-sm-4 control-label">A partir de que el/la aspirante califique como Animador(a), debe elegir si desea que se le retenga el Impuesto Sobre la Renta (Estatus Fiscal de Retención de ISR)</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <select id="identification1">
                                                     <option>Seleccionar</option>
@@ -1029,6 +1030,9 @@
                                                     <option value="no">No</option>
                                                 </select>
                                                 <span class="help-block">Desplegar error</span>
+                                            </div>
+                                            <div class="col-md-4 col-sm-4">
+                                                <a href="javascript:void()" class="link01 light" data-toggle="modal" data-target="#identificationModal">Si la respuesta es No</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1039,7 +1043,7 @@
                                     Para lo cual deberás acudir a la oficina Jafra que te atiende y realizar el tramite correspondiente.</em></p>
                                 <button class="next btn btn-red-light">Continuar</button>
                             </div>
-                            <h3>CAPTURA DE VELICES</h3>
+                            <h3>DATOS DEL GRUPO PARTICIPANTE</h3>
                             <div>
                                 <div class="table-area">
                                     <div class="table-responsive">
@@ -1048,6 +1052,7 @@
                                                 <tr>
                                                     <th width="200">&nbsp;</th>
                                                     <th width="160" class="text-center">Mínimo</th>
+                                                    <th width="160" class="text-center">Máximo</th>
                                                     <th width="160" class="text-center">Capturados</th>
                                                     <th class="text-center">&nbsp;</th>
                                                 </tr>
@@ -1057,6 +1062,9 @@
                                                     <td>Total de Patrocinios</td>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="10" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
+                                                        <input type="text" class="form-control" value="20" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td align="center">
                                                         <div class="form-group has-error">
@@ -1072,6 +1080,9 @@
                                                         <input type="text" class="form-control" value="8" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td align="center">
+                                                        <input type="text" class="form-control" value="0" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
                                                         <div class="form-group has-error">
                                                             <input type="text" class="form-control" style="width:120px;">
                                                             <span class="help-block">Desplegar error</span>
@@ -1083,6 +1094,9 @@
                                                     <td>Indirectos</td>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="1" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
+                                                        <input type="text" class="form-control" value="6" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td align="center">
                                                         <div class="form-group has-error">
@@ -1097,6 +1111,9 @@
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="1" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">
+                                                        <input type="text" class="form-control" value="0" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
                                                     <td>&nbsp;</td>
                                                     <td>&nbsp;</td>
                                                 </tr>
@@ -1110,11 +1127,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>Veliz</th>
+                                                    <th>VIP</th>
                                                     <th>Nombre</th>
                                                     <th>Patrocinio Directo/Indirecto</th>
                                                     <th>Patrocinador(a)</th>
                                                     <th>Clave de Credito</th>
-                                                    <th>VIP</th>
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
@@ -1123,11 +1140,11 @@
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="1111" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">SÍ</td>
                                                     <td align="center">JUANITA PEREZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">SÍ</td>
                                                     <td align="center">
                                                         <a href="javascript:void()" class="closebtn delete-row"><i class="fa fa-close"></i></a>
                                                     </td>
@@ -1136,11 +1153,11 @@
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="12342" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">ARTURO PEREZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">
                                                         <a href="javascript:void()" class="closebtn delete-row"><i class="fa fa-close"></i></a>
                                                     </td>
@@ -1248,11 +1265,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>Veliz</th>
+                                                    <th>VIP</th>
                                                     <th>Nombre</th>
                                                     <th>Patrocinio Directo/Indirecto</th>
                                                     <th>Patrocinador(a)</th>
                                                     <th>Clave de Credito</th>
-                                                    <th>VIP</th>
                                                     <th>&nbsp;</th>
                                                 </tr>
                                             </thead>
@@ -1261,11 +1278,11 @@
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="1111" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">SÍ</td>
                                                     <td align="center">JUANITA PEREZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">SÍ</td>
                                                     <td align="center">
                                                         <a href="javascript:void()" class="closebtn delete-row"><i class="fa fa-close"></i></a>
                                                     </td>
@@ -1274,11 +1291,11 @@
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="12342" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">ARTURO PEREZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">
                                                         <a href="javascript:void()" class="closebtn delete-row"><i class="fa fa-close"></i></a>
                                                     </td>
@@ -1516,7 +1533,9 @@
                         <div class="light">
                             <p>Si tus datos no están correctos, recuerda que tienes 21 días hábiles para acudir a tu Oficina Reginal e iniciar el proceso ARCO de Actualización de Datos Personal o se cancelará tu calificación.</p>
                         </div>
-                        <button class="btn btn-red-light">Continuar</button>
+                        <div class="text-center">
+                            <button class="btn btn-red-light" data-dismiss="modal">Continuar</button>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -784,7 +784,7 @@
                     <div class="col-md-11 col-sm-12">
                         <div class="required-msg">*Campos Requeridos</div>
                         <div id="accordion">
-                            <h3>VELIZ A CALIFICAR</h3>
+                            <h3>DATOS GENERALES DE LA CALIFICACIÓN</h3>
                             <div>
                                 <div class="xform">
                                     <div class="form-horizontal">
@@ -810,9 +810,10 @@
                                 </div>
                                 <button class="next btn btn-red-light">Continuar</button>
                             </div>
-                            <h3>DATOS PERSONALES DEL CONSULTOR(A) A CALIFICAR</h3>
+                            <h3>DATOS DE EL/LA ASPIRANTE A CALIFICAR</h3>
                             <div>
                                 <div class="xform">
+                                    <p class="light">Es importante que el nombre esté correcto y el domicilio esté actualizado para que podamos enviarle con datos correctos sus órdes de pago.</p>
                                     <div class="form-horizontal">
                                         <div class="row">
                                             <div class="col-md-4 col-sm-6">
@@ -941,13 +942,13 @@
                                 <div class="xform" style="margin-top:40px;">
                                     <div class="form-horizontal">
                                         <div class="form-group">
-                                            <label for="" class="col-md-4 col-sm-4 control-label">¿El Nombre de la Consultor(a) a calificar que aparece en pantalla es igual a su identificación oficial?</label>
+                                            <label for="" class="col-md-4 col-sm-4 control-label">¿El domicilio de el/la aspirante a calificar que aparece en pantalla es donde vive actualmente?</label>
                                             <div class="col-md-2 col-sm-4">
                                                <div class="autopopulate">RELLENO AUTOMATICO</div> 
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="" class="col-sm-4 control-label">¿El Domicilio de la Consultor(a) a calificar que aparece en pantalla es correcto?</label>
+                                            <label for="" class="col-sm-4 control-label">¿El nombre de el/la aspirante a calificar que aparece en pantalla coincide con alguna identificación oficial?</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <div class="autopopulate">RELLENO AUTOMATICO</div> 
                                             </div>
@@ -956,10 +957,10 @@
                                 </div>
                                 <button class="next btn btn-red-light">Continuar</button>
                             </div>
-                            <h3>DATOS FISCALES DEL CONSULTOR(A) A CALIFICAR</h3>
+                            <h3>DATOS FISCALES DE/LA ASPIRANTE A CALIFICAR</h3>
                             <div>
-                                <p><em>Te invitamos a revisar el RFC y/o CURP y en caso de no mostrar información y/o estar incorrecto da clic en Modificarr
-</em></p>
+                                <p>Debido a requisitos gubernamentales, es obligatorio que el/la aspirante a calificar proporcione su CURP y RFC para poder enviarle las órdenes de pago que gane en su proceso de calificación.</p>
+                                <p><em>Por favor, revisa si el RFC y/o CURP de/la aspirante a calificar están correctos. </em></p>
                                 <div class="xform">
                                     <div class="form-horizontal">
                                         <div class="form-group">
@@ -977,13 +978,13 @@
                                 <div class="xform" style="margin-top:30px;">
                                     <div class="form-horizontal">
                                         <div class="form-group">
-                                            <label for="" class="col-md-4 col-sm-4 control-label">El RFC y el CRUP del Consultor(a) a calificar que aparece en pantalla es correcto</label>
+                                            <label for="" class="col-md-4 col-sm-4 control-label">¿El RFC y el CRUP de el/la aspirante a calificar que aparecen en pantalla están correctos?</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <div class="autopopulate">RELLENO AUTOMATICO</div> 
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label for="" class="col-sm-4 control-label">A partir de que califiques como Animador(a), ¿cuál será el status fiscal de Retención ISR?</label>
+                                            <label for="" class="col-sm-4 control-label">A partir de que el/la aspirante califique como Animador(a), debe elegir si desea que se le retenga el Impuesto Sobre la Renta (Estatus Fiscal de Retención de ISR)</label>
                                             <div class="col-md-2 col-sm-4">
                                                 <div class="autopopulate">RELLENO AUTOMATICO</div> 
                                             </div>
@@ -996,7 +997,7 @@
                                     Para lo cual deberás acudir a la oficina Jafra que te atiende y realizar el tramite correspondiente.</em></p>
                                 <button class="next btn btn-red-light">Continuar</button>
                             </div>
-                            <h3>CAPTURA DE VELICES</h3>
+                            <h3>DATOS DEL GRUPO PARTICIPANTE</h3>
                             <div>
                                 <div class="table-area">
                                     <div class="table-responsive">
@@ -1005,6 +1006,7 @@
                                                 <tr>
                                                     <th width="200">&nbsp;</th>
                                                     <th width="160" class="text-center">Mínimo</th>
+                                                    <th width="160" class="text-center">Máximo</th>
                                                     <th width="160" class="text-center">Capturados</th>
                                                     <th class="text-center">&nbsp;</th>
                                                 </tr>
@@ -1014,6 +1016,9 @@
                                                     <td>Total de Patrocinios</td>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="10" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
+                                                        <input type="text" class="form-control" value="20" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="12" style="width:120px;" onkeypress="return isNumber(event)">
@@ -1026,6 +1031,9 @@
                                                         <input type="text" class="form-control" value="8" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td align="center">
+                                                        <input type="text" class="form-control" value="0" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
                                                         <input type="text" class="form-control" value="11" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td>&nbsp;</td>
@@ -1036,6 +1044,9 @@
                                                         <input type="text" class="form-control" value="1" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td align="center">
+                                                        <input type="text" class="form-control" value="6" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
                                                         <input type="text" class="form-control" value="1" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td>&nbsp;</td>
@@ -1044,6 +1055,9 @@
                                                     <td>Directo o Indirecto</td>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="1" style="width:120px;" onkeypress="return isNumber(event)">
+                                                    </td>
+                                                    <td align="center">
+                                                        <input type="text" class="form-control" value="0" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
                                                     <td>&nbsp;</td>
                                                     <td>&nbsp;</td>
@@ -1058,11 +1072,11 @@
                                             <thead>
                                                 <tr>
                                                     <th>Veliz</th>
+                                                    <th>VIP</th>
                                                     <th>Nombre</th>
                                                     <th>Patrocinio Directo/Indirecto</th>
                                                     <th>Patrocinador(a)</th>
                                                     <th>Clave de Credito</th>
-                                                    <th>VIP</th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -1070,121 +1084,121 @@
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="1111" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">SÍ</td>
                                                     <td align="center">JUANITA PEREZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">SÍ</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="12342" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">ARTURO PEREZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="33333" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">SÍ</td>
                                                     <td align="center">ERNESTO GONZALEZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">SÍ</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="34567" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">MARÍA ORTIZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="456789" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">GUADALUPE FLORES</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="567890" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">CARMELA DIAZ</td>
                                                     <td align="center">INDIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="678901" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">DALIA ESCUTIA</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="789012" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">JUANA DE LA CRUZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="89012" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">ALEJANDRA VAZQUEZ</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="90123" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">MARÍA ROJAS</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="98765" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">LOURDES AVILA</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                                 <tr>
                                                     <td align="center">
                                                         <input type="text" class="form-control" value="87654" style="width:120px;" onkeypress="return isNumber(event)">
                                                     </td>
+                                                    <td align="center">&nbsp;</td>
                                                     <td align="center">CARLA PALMA</td>
                                                     <td align="center">DIRECTO</td>
                                                     <td align="center">56789</td>
                                                     <td align="center">0</td>
-                                                    <td align="center">&nbsp;</td>
                                                 </tr>
                                             </tbody>
                                         </table>
@@ -1196,15 +1210,13 @@
                             <div>
                                 <div class="blockbox">
                                     <ol>
-                                        <li>Impresión de este comprobante por duplicado.</li>
-                                        <li>Solicitud de Calificacación por Duplicado</li>
-                                        <li>Carta Opción ISR</li>
-                                        <li>RFC</li>
-                                        <li>Programa Firmado</li>
-                                        <li>Carta Responsiva por el manejo de Créditos</li>
-                                        <li>Copia de Comprobante de Domicilio</li>
-                                        <li>Copia de Identificación con foto y firma</li>
-                                        <li>Fotografías.</li>
+                                        <li>Solicitud de Registro de Calificación (original y copia, ambos con fotografía tamaño infantil de el/la aspirante a calificar).</li>
+                                        <li>Contrato de Mediación Mercantil (firmado por el/la aspirante a calificar).</li>
+                                        <li>Carta Responsiva por el manejo de créditos.</li>
+                                        <li>Copia de Comprobante de Domicilio (con antigüedad no mayor a 3 meses).</li>
+                                        <li>Copia de Identificación Oficial vigente (con fotografía y firma).</li>
+                                        <li>Carta de Confirmación de Estatus Fiscal vigente (especificar cuál se entrega: Si Retención, No Retención y emisión de CFDI ó No Retención y entrega CFDI).</li>
+                                        <li>Copia de CURP y RFC.</li>
                                     </ol>
                                 </div>
                             </div>
