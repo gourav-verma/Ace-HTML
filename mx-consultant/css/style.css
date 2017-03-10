@@ -1771,7 +1771,7 @@ h3.ui-accordion-header-active {
 }
 #sidebar .filteritem ul.list-item {
 	padding:0;
-	margin-bottom:10px;
+	margin-bottom:11px;
 }
 #sidebar .filteritem ul.list-item li {
 	margin-bottom:0px;
@@ -3272,6 +3272,19 @@ table.dataTable thead .sorting_desc {
 .closebtn {
     font-size: 18px;
     line-height: 10px;
+}
+
+/* =================================================== */
+/* FORM REPORTS PAGE */
+/* =================================================== */
+.form-report-params h3 {
+    color: #470A68;
+    font-family: 'ggx88book', Arial, sans-serif;
+    font-size: 20px;
+    padding-bottom: 18px;
+}
+.form-report-result td {
+    text-align: center;
 }
 
 /* =================================================== */
